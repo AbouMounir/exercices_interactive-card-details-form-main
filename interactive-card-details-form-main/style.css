@@ -1,0 +1,78 @@
+ @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Space+Grotesk:wght@500&display=swap');
+
+ :root{
+    --Light_grayish_violet: hsl(270, 3%, 87%);
+    --Dark_grayish_violet: hsl(279, 6%, 55%);
+    --Very_dark_violet: hsl(278, 68%, 11%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    position: relative;
+}
+
+.box_left{
+    width: 35%;
+    background-image: url(images/bg-main-desktop.png);
+    height: 99vh;
+    border: 1px solid green;
+}
+
+.box_right{
+    width: 65%;
+    background-color: white;
+    height: 99vh;
+    border: 1px solid red;
+}
+
+.cart_front{
+    background-image: url(images/bg-card-front.png);
+    width: 350px;
+    height: 175px;
+    border: 1px solid red;
+    position: absolute;
+    top: 125px;
+    left: 300px;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cart_back{
+    background-image: url(images/bg-card-back.png);
+    width: 350px;
+    height: 175px;
+    border: 1px solid green;
+    margin-top: 20px;
+    position: absolute;
+    top: 325px;
+    left: 350px;
+    border-radius: 0.5rem;
+}
+
+.name_cart{
+    display: flex;
+    justify-content: space-around;
+    justify-self: flex-end;
+    position: relative;
+    top: 125px ;
+}
+.no_cart{
+    display: flex;
+    justify-content: space-around;
+    justify-self: flex-end;
+    position: relative;
+    top: 100px ;
+    color: white;
+    font: bold 18px 'Space Grotesk', sans-serif ;
+}
+.no_cart p{
+    letter-spacing: 0.2rem;
+}
