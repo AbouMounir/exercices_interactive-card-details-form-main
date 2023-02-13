@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family:'Space Grotesk', sans-serif;
+}
+
 main{
     display: flex;
     position: relative;
@@ -20,7 +24,7 @@ main{
 .box_left{
     width: 35%;
     background-image: url(images/bg-main-desktop.png);
-    height: 99vh;
+    height: 100vh;
     border: 1px solid green;
 }
 
@@ -28,17 +32,71 @@ main{
     width: 65%;
     background-color: white;
     height: 99vh;
-    border: 1px solid red;
+    position: relative;
+}
+
+.box_right_inscription{
+    width: 35%;
+    position : absolute;
+    top: 30%;
+    right: 200px;
+}
+.entete_champ{
+    font-family:'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+.champ_saisie{
+    height: 32px;
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--Dark_grayish_violet);
+    border-radius: 0.5rem;
+    color: var(--Dark_grayish_violet);
+}
+
+.champ_confirm{
+    margin-top: 20px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date_product{
+    display: flex;
+}
+
+.product{
+    margin-left: 0.5rem;
+    width: 50%;
+}
+.date{
+    width: 50%;
+}
+.product .champ_saisie{
+    width: 90%;
+}
+.mois_annee{
+    display: flex;
+}
+.mois_annee .champ_saisie{
+    width: 90%;
 }
 
 .cart_front{
     background-image: url(images/bg-card-front.png);
-    width: 350px;
-    height: 175px;
-    border: 1px solid red;
+    width: 400px;
+    height: 200px;
+    background-size: cover;
     position: absolute;
     top: 125px;
-    left: 300px;
+    left: 200px;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -47,14 +105,20 @@ main{
 
 .cart_back{
     background-image: url(images/bg-card-back.png);
-    width: 350px;
-    height: 175px;
-    border: 1px solid green;
+    width: 400px;
+    height: 200px;
+    background-size: cover;
     margin-top: 20px;
     position: absolute;
     top: 325px;
-    left: 350px;
+    left: 270px;
     border-radius: 0.5rem;
+}
+.cart_back p{
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 320px;
 }
 
 .name_cart{
